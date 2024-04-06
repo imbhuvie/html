@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <style>
+            #border{
+                height:210px;
+                width:202px;
+                border:1px solid black;
+                background-color: rgb(233, 170, 88);
+                margin:auto;
+                box-shadow: 8px 8px 8px 8px black ;
+            }
+            #display{
+                height:20px;
+                width:100px;
+                float:left;
+            }
+            #cc{
+                height:20px;
+                width:20px;
+                float:right;
+                margin-right:10px;
+            }
+	    .r{
+		height:40px;
+        width:200px;
+		}
+        .b{
+            margin-top: 8px;
+            float:left;
+            
+        }
+        .b1{
+            height:40px;
+            width:48px;
+            float:left;
+        }
+        .b2{
+            height:10px;
+            width:10px;
+            margin-top:9px;
+            margin-left:12px;
+        }
+        </style>
+        <script>
+            function dis(val){
+                document.getElementById("result").value+=val;
+            }
+            function clr(){
+                document.getElementById("result").value=""
+            }
+            function solve(){
+                let x = document.getElementById("result").value
+                let y = eval(x)
+				document.getElementById("result").value=y
+            }
+        </script>
+    </head>
+    <body>
+        <h3 style="text-align:center;">Bhupendra calculater</h3>
+        <div id="border">
+            <div class="r">    
+            	<div class="b">
+            	<input type="text" id="result"/>              
+           	</div> 
+            	<div class="b">
+            	    <input type="button" value="c" onclick="clr()"/>
+            	</div>
+            </div>
+            <div class="r">
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="1" onclick="dis('1')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="2" onclick="dis('2')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="3" onclick="dis('3')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="/" onclick="dis('/')"/>
+                    </div>
+                </div>
+            </div>
+            <div class="r">
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="4" onclick="dis('4')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="5" onclick="dis('5')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="6" onclick="dis('6')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="*" onclick="dis('*')"/>
+                    </div>
+                </div>
+            </div>
+            <div class="r">
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="7" onclick="dis('7')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="8" onclick="dis('8')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="9" onclick="dis('9')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="-" onclick="dis('-')"/>
+                    </div>
+                </div>
+            </div>  
+            <div class="r">
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="0" onclick="dis('0')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="." onclick="dis('.')"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="=" onclick="solve()"/>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class="b2">
+                        <input type="button" value="+" onclick="dis('+')"/>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </body>
+</html>>

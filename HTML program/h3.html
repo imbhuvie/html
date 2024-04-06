@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            #a{
+                height:200px;
+                width:200px;
+				background-color:yellow;
+                border:2px solid blue;
+				border-radius:100px;
+				float:left;
+            }
+			#b{
+                height:200px;
+                width:200px;
+				background-color:yellow;
+                border:2px solid blue;
+				border-radius:100px;
+				float:right;
+				display:none;
+            }
+			.t1{
+			margin-top:90px;
+			margin-left:75px;
+			font-size:20px;
+			}
+        </style>
+		<script>
+			function m1(){
+			document.getElementById("a").style.display="none";
+			document.getElementById("b").style.display="block";
+			}
+			function m2(){
+			document.getElementById("b").style.display="none";
+			document.getElementById("a").style.display="block";
+			}
+		</script>
+	
+    </head>
+    <body>
+        <div id="a" onmouseover="m1()"><div class="t1">Touch</div></div>
+		<div id="b" onmouseover="m2()"><div class="t1">Touch</div></div>
+    </body>
+</html>

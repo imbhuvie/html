@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            #mydiv{
+                height:200px;
+                width:200px;
+				background-color:yellow;
+                border:2px solid blue;
+				//margin:0px auto;
+            }
+		/*	#mydiv:hover{
+			background-color:red;
+			border-radius:100px;
+			}
+		*/
+        </style>
+		<script>
+		function myfun(){
+		//window.alert("hello");
+		document.getElementById("mydiv").style.backgroundColor="red";
+		document.getElementById("mydiv").style.borderRadius="100px";
+		}
+		function myfun2(){
+		//window.alert("hello");
+		document.getElementById("mydiv").style.backgroundColor="yellow";
+		document.getElementById("mydiv").style.borderRadius="0px";
+		}
+		function move(){
+		//window.alert("hello");
+		document.getElementById("mydiv").style.marginLeft="1060px";
+		}
+		</script>
+    </head>
+    <body>
+        <div id="mydiv" onmouseover="myfun()" onmouseout="myfun2()" onclick="move()">
+		</div>
+    </body>
+</html>

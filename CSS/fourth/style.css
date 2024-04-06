@@ -1,0 +1,21 @@
+div{
+    height: 75px;
+    width: 75px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 128, 0,0.6);
+    /* rgba set set opacity of color */
+   /* display: inline-block; */
+   margin: 10px;
+
+}
+p{
+    display:inline;
+}
+#box0{
+    visibility: hidden;
+}
+#box2{
+    display: none;
+}

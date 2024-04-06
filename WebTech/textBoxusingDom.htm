@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <div id="dynamicElements"></div>
+    <script>
+      var textBox = document.createElement("input");
+      textBox.type = "text";
+      textBox.placeholder = "Enter text";
+      var button = document.createElement("input");
+      button.type = "submit";
+      var dynamicElementsDiv = document.getElementById("dynamicElements");
+      dynamicElementsDiv.appendChild(textBox);
+      dynamicElementsDiv.appendChild(button);
+    </script>
+  </body>
+</html>

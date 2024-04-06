@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+	function ftoc(){
+	//window.alert("hello");
+	var f=parseInt(document.getElementById("f").value);
+	//window.alert(f);
+	var c=(f-32)*5/9;
+	//window.alert(c);
+	document.getElementById("c").value=c;
+	}
+	function ctof(){
+	//window.alert("hello");
+	var c=parseInt(document.getElementById("c").value);
+	//window.alert(c);
+	var f=(c*9/5)+32;
+	//window.alert(f);
+	document.getElementById("f").value=f;
+	}
+</script>
+</head>
+<body>
+
+	<label for="f">farhenheight:</label>
+	<input type="text" id="f" onkeyup="ftoc()"/> =
+	<label for="c">Calsius:</label>
+	<input type="text" id="c" onkeyup="ctof()"/>
+</body>
+</html>

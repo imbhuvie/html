@@ -1,0 +1,68 @@
+<html>
+<head>
+<script>
+	function sum()
+	{
+	var a=parseInt(document.getElementById("f1").value);
+	var b=parseInt(document.getElementById("f2").value);
+	//var sum=parseInt(a)+parseInt(b);
+	var sum =a+b;
+	//document.write(sum);
+	//window.alert(sum);
+	//window.alert(a);
+	//window.alert(b);
+	document.getElementById("f3").value=sum;
+	}
+	function sub()
+	{
+	var a=parseInt(document.getElementById("f1").value);
+	var b=parseInt(document.getElementById("f2").value);
+	//var sub=parseInt(a)-parseInt(b);
+	var sub=a-b;
+	//document.write(sub);
+	//window.alert(sub);
+	//window.alert(a);
+	//window.alert(b);
+	document.getElementById("f3").value=sub;
+	}
+	function mul()
+	{
+	var a=parseInt(document.getElementById("f1").value);
+	var b=parseInt(document.getElementById("f2").value);
+	//var sum=parseInt(a)+parseInt(b);
+	var mul =a*b;
+	//document.write(mul);
+	//window.alert(mul);
+	//window.alert(a);
+	//window.alert(b);
+	document.getElementById("f3").value=mul;
+	}
+	function devide()
+	{
+	var a=parseInt(document.getElementById("f1").value);
+	var b=parseInt(document.getElementById("f2").value);
+	//var sum=parseInt(a)+parseInt(b);
+	var devide =a/b;
+	//document.write(devide);
+	//window.alert(devide);
+	//window.alert(a);
+	//window.alert(b);
+	document.getElementById("f3").value=devide;
+	}
+</script>
+</head>
+<body>
+<form>
+<label for="f1">Enter 1<sup>st</sup> no:</label>
+<input type="text" id="f1"/></br>
+<label for="f2">Enter 2<sup>st</sup> no:</label>
+<input type="text" id="f2"/></br>
+<input type="button"value="+"onclick="sum()"/>
+<input type="button"value="-"onclick="sub()"/>
+<input type="button"value="*"onclick="mul()"/>
+<input type="button"value="/"onclick="devide()"/></br>
+<label for="f3">Result is:</label>
+<input type="text" id="f3" /></br>
+</form>
+</body>
+<html/>
